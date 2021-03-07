@@ -1,0 +1,71 @@
+.blocks {
+    position: relative;
+    padding: 151px 0 87px;
+    &::after {
+        width: 100%;
+        height: 100%;
+        display: block;
+        content: '';
+        background-image: url(../images/bg-block.png);
+    }
+}
+.block-img {
+    @include breakpoint($w-991) {
+        margin-top: 60px;
+    }
+}
+.block__stat {
+    max-width: 456px;
+    background: #fff;
+    box-shadow: 40px 0px 30px rgba(11, 53, 102, 0.05);
+    border-radius: 8px;
+    margin: 0 auto;
+    @include breakpoint($w-576) {
+        box-shadow: 1px 0px 17px 0px rgba(11, 53, 102, 0.25);
+    }
+    &--info {
+        padding: 32px 84px 0 32px;
+        @include breakpoint($w-576) {
+            padding: 32px 32px 0;
+        }
+    }
+    &-graphic {
+        max-width: 392px;
+        margin: 0 auto;
+        position: relative;
+        @include breakpoint($w-576) {
+            margin-top: 50px;
+            padding: 5px 5px 0 5px;
+            overflow: hidden;
+        }
+    }
+}
+.bg-block {
+    position: absolute;
+    top: 10px;
+    right: -120px;
+    z-index: -1;
+    img {
+        @include breakpoint($w-768) {
+            width: 120%;
+            height: 120%;
+        }
+    }
+    @include breakpoint($w-1300) {
+        right: 0;
+    }
+    @include breakpoint($w-991) {
+        top: 25%;
+        left: -100px;
+    }
+    @include breakpoint($w-768) {
+        top: 35%;
+        right: 0;
+    }
+    @include breakpoint($w-576) {
+        display: none;
+    }
+}
+.block-button {
+    margin-top: 74px;
+}

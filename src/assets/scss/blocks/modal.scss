@@ -1,0 +1,42 @@
+.modal-header {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background: #000000cb;
+    @include breakpoint($w-400) {
+        width: 100%;
+    }
+}
+.block-modal {
+    position: absolute;
+    top: 10%;
+}
+.modal-burger {
+    display: none;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: 5%;
+    right: 6px;
+    &::before {
+        width: 36px;
+        height: 2px;
+        margin-bottom: 8px;
+        background: $white;
+        display: block;
+        content: '';
+    }
+    &::after {
+        width: 24px;
+        height: 2px;
+        background: $white;
+        display: block;
+        content: '';
+    }
+    @include breakpoint($w-576) {
+        display: block;
+    }
+}

@@ -1,0 +1,57 @@
+.graphic {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+    position: relative;
+}
+.graphic-date {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+.x {
+    display: flex;
+}
+.y {
+    width: 100%;
+    position: absolute;
+    top: 22px;
+}
+.line-graphic {
+    position: absolute;
+    top: -21px;
+    img {
+        @include breakpoint($w-576) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @include breakpoint($w-576) {
+        bottom: 33px;
+    }
+}
+.line-x {
+    display: block;
+    height: 190px;
+    width: 1px;
+    border-right: 1px dashed #000;
+    margin-left: 43px;
+}
+.line-y {
+    display: block;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px dashed #000;
+    margin-bottom: 56px;
+}
+.number {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: #243242;
+    @include breakpoint($w-576) {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}

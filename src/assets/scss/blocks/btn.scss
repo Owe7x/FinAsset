@@ -1,0 +1,71 @@
+.btn {
+    background: #03A3FF;
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    &--header {
+        font-size: 15px;
+        width: 149px;
+        height: 44px;
+        line-height: 20px;
+        @include breakpoint($w-991) {
+            width: 135px;
+            height: 34px;
+            font-size: 13px;
+        }
+        &--modal {
+            margin-top: 20px;
+            @include breakpoint($w-400) {
+                margin-top: 0;
+            }
+        }
+    }
+    &--download {
+        width: 280px;
+        height: 64px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-right: 32px;
+        @include breakpoint($w-991) {
+            width: 270px;
+            height: 54px;
+            font-size: 18px;
+        }
+        @include breakpoint($w-768) {
+            width: 230px;
+            height: 44px;
+            font-size: 16px;
+        }
+        @include breakpoint($w-576) {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+    &--block {
+        width: 360px;
+        height: 64px;
+        margin-right: 32px;
+        font-size: 19px;
+        line-height: 28px;
+        color: $white;
+        @include breakpoint($w-991) {
+            width: 340px;
+            height: 54px;
+            font-size: 17px;
+            line-height: 26px;
+        }
+        @include breakpoint($w-768) {
+            width: 310px;
+            height: 54px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        @include breakpoint($w-576) {
+            width: 280px;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+}

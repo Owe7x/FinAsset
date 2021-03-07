@@ -1,0 +1,199 @@
+.text-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    &--header {
+        color: $white;
+        font-size: 24px;
+        line-height: 95.5%;
+        margin-bottom: 16px;
+        @include breakpoint($w-991) {
+            font-size: 22px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 18px;
+        }
+        @include breakpoint($w-576) {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    &--block {
+        color: $primary;
+        opacity: 0.6;
+        margin-bottom: 11px;
+        font-size: 24px;
+        line-height: 24px;
+        @include breakpoint($w-991) {
+            font-size: 22px;
+            line-height: 22px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        @include breakpoint($w-576) {
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+        }
+    }
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 53px;
+    margin-bottom: 24px;
+    @include breakpoint($w-991) {
+        font-size: 46px;
+        line-height: 43px;
+    }
+    @include breakpoint($w-768) {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 16px;
+    }
+    @include breakpoint($w-576) {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+.p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    &--header {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 40px;
+        @include breakpoint($w-991) {
+            font-size: 18px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        @include breakpoint($w-576) {
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+    }
+    &--header-footer {
+        color: $white;
+        font-size: 16px;
+        line-height: 24px;
+        @include breakpoint($w-991) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+    &--block {
+        font-size: 16px;
+        line-height: 24px;
+        color: $primary;
+        margin-bottom: 15px;
+        @include breakpoint($w-991) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        @include breakpoint($w-576) {
+            font-size: 10px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+
+}
+.consult {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    &--header {
+        color: $white;
+        font-size: 20px;
+        line-height: 28px;
+        @include breakpoint($w-991) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+    }
+    &--block {
+        font-size: 19px;
+        line-height: 28px;
+        @include breakpoint($w-991) {
+            font-size: 17px;
+            line-height: 26px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+}
+.title-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    &--header {
+        font-size: 22px;
+        line-height: 28px;
+        color: $white;
+        margin-bottom: 8px;
+        @include breakpoint($w-991) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    &--block {
+        font-size: 44px;
+        line-height: 48px;
+        color: $primary;
+        margin-bottom: 24px;
+        @include breakpoint($w-991) {
+            font-size: 38px;
+            line-height: 38px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        @include breakpoint($w-576) {
+            font-size: 26px;
+            line-height: 26px;
+            text-align: center;
+        }
+    }
+    &--block-img {
+        font-size: 20px;
+        line-height: 28px;
+        color: $primary;
+        margin-bottom: 8px;
+        @include breakpoint($w-576) {
+            text-align: center;
+        }
+    }
+}
