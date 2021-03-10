@@ -9,6 +9,8 @@ html {
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     background-color: #fff;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -34,3 +36,16 @@ a {
 @import "blocks/blocks.scss";
 @import "blocks/graphic.scss";
 @import "blocks/modal.scss";
+@import "blocks/calc.scss";
+@import "blocks/calculator.scss";
+@import "blocks/ion.rangeSlider.scss";
+@import "blocks/about.scss";
+@import "blocks/regionInvest.scss";
+@import "blocks/mobile.scss";
+@import "blocks/reviews.scss";
+@import "blocks/slick.scss";
+@import "blocks/slick-theme.scss";
+@import "blocks/franchise.scss";
+@import "blocks/services.scss";
+@import "blocks/news.scss";
+@import "blocks/footer.scss";

@@ -25,7 +25,7 @@
     &--download {
         width: 280px;
         height: 64px;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 28px;
         margin-right: 32px;
         @include breakpoint($w-991) {
@@ -47,7 +47,7 @@
         width: 360px;
         height: 64px;
         margin-right: 32px;
-        font-size: 19px;
+        font-size: 17px;
         line-height: 28px;
         color: $white;
         @include breakpoint($w-991) {
@@ -67,5 +67,66 @@
             margin-right: 0;
             margin-bottom: 30px;
         }
+    }
+    &--calc {
+        padding: 18px 33px;
+        font-size: 17px;
+        line-height: 28px;
+        margin-top: 8px;
+        @include breakpoint($w-991) {
+            font-size: 16px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 15px;
+        }
+        @include breakpoint($w-576) {
+            font-size: 14px;
+            padding: 18px 28px;
+        }
+    }
+    &--city {
+        padding: 18px 86px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 56px;
+        @include breakpoint($w-991) {
+            font-size: 19px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 18px;
+        }
+        @include breakpoint($w-576) {
+            font-size: 16px;
+            padding: 18px 86px;
+            display: block;
+            margin: 0 auto;
+        }
+
+    }
+    &--franchise {
+        padding: 18px 38px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 74px;
+        @include breakpoint($w-991) {
+            font-size: 19px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 18px;
+        }
+        @include breakpoint($w-576) {
+            font-size: 16px;
+            display: block;
+            width: 300px;
+            margin: 74px auto 0;
+        }
+        
+
+    }
+    &--footer {
+        padding: 10px 12px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
     }
 }

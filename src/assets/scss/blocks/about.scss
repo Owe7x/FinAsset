@@ -1,0 +1,23 @@
+.about-company {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    &__info {
+        width: 55%;
+        padding: 83px 58px 0 156px;
+        @include breakpoint($w-1200) {
+            width: 55%;
+            padding: 83px 58px 0 56px;
+        }
+        @include breakpoint($w-991) {
+            width: 100%;
+            padding: 83px 58px;
+        }
+    }
+    &__img {
+        width: 45%;
+        @include breakpoint($w-991) {
+            display: none;
+        }
+    }
+}

@@ -60,6 +60,11 @@
         line-height: 30px;
         text-align: center;
     }
+    &--min {
+        font-size: 20px;
+        line-height: 28px;
+        color: $primary;
+    }
 }
 .p {
     font-family: 'Montserrat', sans-serif;
@@ -117,6 +122,25 @@
             text-align: center;
         }
     }
+    &--invest {
+        font-size: 20px;
+        line-height: 28px;
+        color: #243242;
+        @include breakpoint($w-991) {
+            font-size: 18px;
+        }
+        @include breakpoint($w-768) {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        @include breakpoint($w-576) {
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
 
 }
 .consult {
@@ -148,6 +172,11 @@
             font-size: 14px;
             line-height: 24px;
         }
+    }
+    &--invest {
+        font-size: 20px;
+        line-height: 28px;
+        color: #03A3FF;
     }
 
 }

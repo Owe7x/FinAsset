@@ -1,0 +1,37 @@
+.services {
+    margin-top: 200px;
+    &__text {
+        padding-right: 10px;
+        @include breakpoint($w-576) {
+            width: 100%;
+        }
+    }
+    &__info {
+        max-width: 456px;
+        padding-top: 36px;
+        padding-left: 60px;
+        &-number {
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 48px;
+            color: $primary;
+        }
+        &-social {
+            display: flex;
+        }
+        @include breakpoint($w-768) {
+            padding-left: 0;
+        }
+        @include breakpoint($w-576) {
+            margin: 0 auto;
+        }
+    }
+    &__social-link {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

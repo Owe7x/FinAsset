@@ -1,0 +1,109 @@
+.calc {
+    padding: 96px 0;
+    background: #F3F8FF;
+    &__text {
+        max-width: 600px;
+        margin-bottom: 56px;
+    }
+    &__invest {
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 32px 37px;
+        box-shadow: 10px 10px 20px rgba(44, 64, 75, 0.03);
+        border-radius: 8px;
+        &-block {
+            width: 338px;
+            @include breakpoint($w-1200) {
+                margin: 0 auto;
+            }
+            @include breakpoint($w-576) {
+                max-width: 290px;
+                margin: 0 0;
+            }
+        }
+        @include breakpoint($w-1200) {
+            width: 412px;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        @include breakpoint($w-576) {
+            padding: 10px 10px;
+            width: 310px;
+        }
+    }
+}
+.block-toggle {
+    border: 1px solid rgba(159, 170, 185, 0.32);
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    width: 100%;
+
+    
+}
+.toggle__link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: $primary;
+    padding:  18px 19px;
+    width: 112px;
+    text-align: center;
+    cursor: pointer;
+    &--active {
+        background: #03A3FF;
+        color: #fff;
+        border-radius: 8px;
+    }
+}
+.toggle__link-two {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    color: $primary;
+    padding:  18px 0px;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    &--active {
+        background: #03A3FF;
+        color: #fff;
+        border-radius: 8px;
+    }
+}
+.block-result {
+    border: 1px solid rgba(159, 170, 185, 0.32);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px;
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        &:last-child {
+            margin-bottom: 16px;
+        }
+    }
+}
+.result-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: $primary;
+}
+.result-number {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: $primary;
+}

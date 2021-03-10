@@ -1,0 +1,67 @@
+.calculator {
+    margin: 44px 0 0;
+}
+.polzunok-container-2 * {
+    box-sizing: border-box;
+    outline: none;
+
+}
+.polzunok-2 {
+    margin-bottom: 10px;
+}
+
+
+.polzunok-block {
+    display: flex;
+    flex-direction: column;
+}
+.polzunok__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.polzunok__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: $primary;
+}
+.polzunok__value {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: $primary;
+}
+.polzunok__value-one {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: $primary;
+}
+.polzunok-scale {
+    display: flex;
+    justify-content: space-between;
+    &-value {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $primary;
+    }
+}
+.polzunok__result {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 38px;
+    color: #DB8032;
+    margin-top: 13px;
+}
